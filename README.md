@@ -2,7 +2,7 @@
 Scripts for managing remote wordpress installations.
 
 ## What you need
-These scripts assume a lot about the systems you're using, so it is encouraged to copy and customize these scripts for each project. It also assumes the use of .env files for setting up environment variables, and some **magic paths** that you probably want to change.
+These scripts assume a lot about the systems you're using, so it is encouraged to copy and customize these scripts for each project. It also assumes the use of .env files for setting up environment variables, and some **magic paths** and commands (such as my usage of ``vagrant ssh`` on my local machine) that you almost certainly want to change. These were created for my use and evolve with my needs, so they probably will do the same for you.
 
 ## Folder structure
 * ``src`` contains your wordpress install
