@@ -47,3 +47,6 @@ $ bin/uploads.sh staging.env pull
 ### Known issues
 * These scripts can be a bit fragile and don't have proper error handling for all edge cases, such as a network disruption.
 * Some wordpress widgets store their state as a serialized array, which is not properly handled by the simple grep to convert hostnames between hosts. These widgets will appear broken but it will not interfere with the rest of the site.
+
+### Credits
+These were created by [industrial.](https://industrialagency.ca/) :factory:  (github account: [@industrialdev](https://github.com/industrialdev))
