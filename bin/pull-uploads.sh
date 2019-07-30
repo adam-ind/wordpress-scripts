@@ -11,6 +11,6 @@ echo "Getting uploads/ from $1..."
 # -a archive (-rlptgoD)
 # -z compress
 # -P partial progress
-rsync -zaP $REMOTE $UPLOADS_DIR 
+rsync -zaP -e "ssh -i $SSH_KEY" $REMOTE $UPLOADS_DIR
 
 echo "Local uploads/ updated from $1."

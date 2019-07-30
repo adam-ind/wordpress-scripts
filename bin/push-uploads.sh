@@ -11,6 +11,6 @@ echo "Sending uploads/ to $1 using $REMOTE"
 # -a archive (-rlptgoD)
 # -z compress
 # -P partial progress
-rsync -zaP $UPLOADS_DIR $REMOTE 
+rsync -zaP -e "ssh -i $SSH_KEY" $UPLOADS_DIR $REMOTE
 
 echo "Local uploads/ are now on $1."
