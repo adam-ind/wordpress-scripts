@@ -17,8 +17,8 @@ $ bin/script.sh <environment> <mode>
 * \<environment\> is a filename in your ``hosts/`` folder.
 * \<mode\> is one of a series of commands: push, pull, backup, lock, and unlock.
   
-  * push: Take whatever you have locally and push it to the remote host
-  * pull: The opposite, pull the data from the remote host and put it on your local machine
+  * **push**: Take whatever you have locally and push it to the remote host
+  * **pull**: The opposite, pull the data from the remote host and put it on your local machine
   * backup: Only usable with ``database.sh``, creates a db.sql.gz for easy backup of a db
   * lock/unlock: Only usable with `database.sh`, puts a lock file on the remote machine to prevent two people from overwriting the database at the same time. You probably will never have to use this.
   
@@ -47,3 +47,6 @@ $ bin/uploads.sh staging.env pull
 ### Known issues
 * These scripts can be a bit fragile and don't have proper error handling for all edge cases, such as a network disruption.
 * Some wordpress widgets store their state as a serialized array, which is not properly handled by the simple grep to convert hostnames between hosts. These widgets will appear broken but it will not interfere with the rest of the site.
+
+### Credits
+These were created by [industrial.](https://industrialagency.ca/) :factory:  (github account: [@industrialdev](https://github.com/industrialdev))
