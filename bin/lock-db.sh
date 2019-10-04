@@ -2,6 +2,12 @@
 
 
 export $(egrep -v '^#' hosts/$1 | xargs)
+
+if [[ -n "$PREVENT_PUSH_DB" ]]; then
+  echo "ERROR: Host $1 does not allow pushing data to it!"
+  exit 1
+fi
+
 CUR_USER=`git config user.name`
 LOCK_PATH="${SITE_PATH}/src/_db.lock"
 
